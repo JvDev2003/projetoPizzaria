@@ -1,0 +1,78 @@
+/***************resets************/
+@import url(resets.css);
+
+/*************menu***************/
+@import url(menu.css);
+
+/************banner*************/
+@import url(banner.css);
+
+.overlay{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+form{
+    height: 70vh;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form fieldset{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+form fieldset > label{
+    width: 100%;
+    display: block;
+}
+
+.endereco{
+    border-top: 2px solid gray;
+}
+
+h3{
+    display: block;
+    width: 100%;
+}
+
+.senhas{
+    width: 100%;
+}
+
+.senhas label{
+    width: 40%;
+}
+
+input:not([type=submit]){
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+form div input[type=submit]{
+    height: 50px;
+    width: 300px;
+    margin-top: 10px;
+    background-color: blue;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+form div input[type=submit]:hover{
+    background-color: rgb(1, 1, 161);
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
