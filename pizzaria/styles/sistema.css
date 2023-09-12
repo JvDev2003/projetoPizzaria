@@ -1,0 +1,27 @@
+/***************resets************/
+@import url(resets.css);
+
+/*************menu***************/
+@import url(menu.css);
+
+.pedidos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 3px 15px;
+    text-align: center;
+}
+
+.acoes{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
