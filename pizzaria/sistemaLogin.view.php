@@ -15,7 +15,7 @@
         <section class="banner">
             <div class="overlay">
                 <h2>Login para Funcionários</h2>
-                <a src="sistema.view.php">sistema</a>
+                <a href="./sistema.view.php">sistema</a>
                 <form method="post" action="php/efetuaLoginFuncionario.php">
                     <label for="email">
                         <input type="email" name="email" id="email" placeholder="exemplo@email.com" />

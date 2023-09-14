@@ -20,8 +20,17 @@ th, td{
     text-align: center;
 }
 
-.acoes{
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
+td:last-child{
+    font-size: 3rem;
+}
+
+td a{
+    padding: 3px;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
 }
