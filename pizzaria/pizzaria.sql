@@ -156,10 +156,10 @@ CREATE TABLE `pizza` (
 --
 
 INSERT INTO `pizza` (`nome`, `ingredientes`, `img_url`, `valor`) VALUES
-('Bacon', 'Bacon, quijo mussarela, milho, catupiry', './images/pizza-de-vista-frontal-com-tomate-vermelho-e-queijo-na-mesa-redonda-de-madeira-marrom-e-piso-cinza.jpg', 45),
-('Calabresa', 'Calabresa, queijo mussarela, oregano, catupiry', './images/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai.jpg', 40),
+('Bacon', 'Bacon, queijo mussarela, milho, catupiry', './images/pizza-de-vista-frontal-com-tomate-vermelho-e-queijo-na-mesa-redonda-de-madeira-marrom-e-piso-cinza.jpg', 45),
+('Calabresa', 'Calabresa, queijo mussarela, orégano, catupiry', './images/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai.jpg', 40),
 ('Pizza de Azeitona com cogumelos', 'Azeitona preta, champignon, calabresa e mussarela.', './images/pizza-recem-assada-na-mesa-de-madeira-rustica-gerada-por-ia.jpg', 35),
-('Quatro Queijos', 'Queijo mussarela, gorgonzola, parmesão, provolone, oregano, caputupiry.', './images/pizza-quatro-queijos-em-cima-da-mesa.jpg', 30);
+('Quatro Queijos', 'Queijo mussarela, gorgonzola, parmesão, provolone, orégano, catupiry.', './images/pizza-quatro-queijos-em-cima-da-mesa.jpg', 30);
 
 -- --------------------------------------------------------
 

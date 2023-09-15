@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/sistema.css">
 </head>
+
 <body>
     <main>
         <?php require './elements/menu.view.php'; ?>
+
         <section class="pedidos">
             <table>
                 <thead>

@@ -1,11 +1,15 @@
 # projetoPizzaria
 
-Funções/Telas a adicionar:
+Integrantes:
+-  João Vitor Santos
+-  Luiz Felipe Hagy
 
--  Excluir pedido.
--  Concluir pedido.
--  Editar pedido.
--  Validações.
--  Feedbacks para o cliente.
--  Tela e logica para confirmação do pedido pelo cliente.
--  Tela e logica para adicionar um novo sabor de Pizza.
+Funções/Telas a adicionar:
+-  Excluir pedido;
+-  Concluir pedido;
+-  Editar pedido;
+-  Validações;
+-  Feedbacks para o cliente;
+-  Tela e lógica para confirmação do pedido pelo cliente;
+-  Tela e lógica para adicionar um novo sabor de Pizza;
+-  Armazenamento de senhas seguro.
