@@ -12,7 +12,7 @@
     <main>
         <?php require './elements/menu.view.php'; ?>
         <section class="sabores">
-            <form method="post" action="./php/fazerPedidoTeste.php">
+            <form method="post" action="./php/fazerPedido.php">
                 <ul>
                     <?php
                         require 'php/imprimeSabores.php';
