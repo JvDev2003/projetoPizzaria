@@ -16,6 +16,7 @@
             <div class="overlay">
                 <h2>Login para Funcionários</h2>
                 <a href="./sistema.view.php">sistema</a>
+                <a href="./php/fazerPedidoTeste.php">Teste</a>
                 <form method="post" action="php/efetuaLoginFuncionario.php">
                     <label for="email">
                         <input type="email" name="email" id="email" placeholder="exemplo@email.com" />
