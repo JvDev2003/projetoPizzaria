@@ -16,4 +16,3 @@ function subtraiUm(nome){
     }
     elemento.value--;
 }
-

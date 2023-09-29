@@ -31,7 +31,7 @@
         <td><?= $frase ?></td>
         <td><?php echo("R: {$row['rua']}, {$row['numero']}<br/>CEP: {$row['cep']}") ?></td>
         <td><?= $row['nome'] ?></td>
-        <td><?php echo $row['valorTotal'] ?></td>
+        <td>R$<?php echo($row['valorTotal'])?>,00</td>
         <td>
             <a onClick="excluir(<?= $row['idPedido'] ?>)"><i class="fa-solid fa-check" style="color:green"></i></a>
             <a><i class="fa-solid fa-xmark" style="color:red"></i></a>

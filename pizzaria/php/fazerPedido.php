@@ -14,6 +14,7 @@
 
     $pizzas = array_keys(array_filter($_POST,"intervalo"));    
     $valor = 0;
+    
     foreach($pizzas as $pizza){
         $nome = preg_replace($regex, " ", $pizza);
 
