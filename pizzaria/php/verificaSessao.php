@@ -13,4 +13,16 @@ function verifica_conectado (){
       header("Location: ../login.view.php"); exit;
   }
 }
+
+function verificaPermissao($permissao){
+
+  // Verifica se o usuario tem a permissão necessaria para acessar a pagina
+  if (!isset($_SESSION['userPermissoes']) < $permissao) {
+      // Destrói a sessão por segurança
+      session_destroy();
+      // Redireciona o visitante de volta pro login
+      header("Location: ../login.view.php"); exit;
+  }
+}
+
 ?>
