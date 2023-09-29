@@ -13,7 +13,7 @@
             </div>
             <div class="descricao-pizza">
                 <h3><?php echo $row['nome']?></h3>
-                <span>(maximo 5 por cliente)</span>
+                <span>(máximo 5 por cliente)</span>
                 <p><?php echo $row['ingredientes']?></p>
                 <p>R$<?php echo $row['valor']?>,00</p>
                 <span class="plus" onClick="adicionaUm('<?php echo $row['nome']?>')">+</span><input type="number" max="5" min="0" name="<?php echo $row['nome']?>" id="<?php echo $row['nome']?>" readonly value="0"/><span class="minus" onClick="subtraiUm('<?php echo $row['nome']?>')">-</span>
