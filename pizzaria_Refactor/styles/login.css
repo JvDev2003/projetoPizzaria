@@ -1,0 +1,66 @@
+.overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    align-items: center;
+}
+
+#login input[type=email],
+#login form input[type=password]{
+    width: 310px;
+}
+
+#login form input[type=submit],
+#login form input[type=reset]{
+    width: 150px;
+    border: none;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login form input:first-child{
+    margin-top: 20px;
+}
+
+#login form input{
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#login form input[type=submit]{
+    background-color: blue;
+}
+
+#login form input[type=reset]{
+    background-color: red;
+}
+
+#login form input[type=submit]:hover{
+    background-color: rgb(1, 1, 161);
+    color: white;
+}
+
+#login form input[type=reset]:hover{
+    color: white;
+    background-color: rgb(151, 0, 0);
+}
+
+#login form a{
+    color: white;
+    text-decoration: none;
+    transform: 0.5s;
+}
+
+#login form a:hover{
+    text-decoration:underline;
+}
