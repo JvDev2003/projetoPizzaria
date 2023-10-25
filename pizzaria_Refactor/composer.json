@@ -1,0 +1,11 @@
+{
+    "name": "jvspl/pizzaria_refactor",
+    "description": "Pizzaria",
+    "license": "MIT",
+    "autoload": {
+        "classmap": ["./"]
+    },
+    "require": {
+        "pecee/simple-router": "5.3.0.5"
+    }
+}
