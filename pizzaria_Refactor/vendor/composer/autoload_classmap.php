@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'BootManagerTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/BootManagerTest.php',
+    'CardapioController' => $baseDir . '/controller/cardapio.controller.php',
     'ClassLoaderTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/ClassLoaderTest.php',
     'ComposerAutoloaderInitd65bbfe004e796b6dce62e66b5b4fcb5' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
@@ -27,9 +28,12 @@ return array(
     'ExceptionHandlerSecond' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Handler/ExceptionHandlerSecond.php',
     'ExceptionHandlerThird' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Handler/ExceptionHandlerThird.php',
     'FindUrlBootManager' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Managers/FindUrlBootManager.php',
+    'FuncionariosController' => $baseDir . '/controller/funcionarios.controller.php',
+    'HomeController' => $baseDir . '/controller/home.controller.php',
     'InputHandlerTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/InputHandlerTest.php',
     'IpRestrictMiddleware' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Middleware/IpRestrictMiddleware.php',
     'LoadableRouteTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/LoadableRouteTest.php',
+    'LoginController' => $baseDir . '/controller/login.controller.php',
     'MiddlewareLoadedException' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Exception/MiddlewareLoadedException.php',
     'MiddlewareTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/MiddlewareTest.php',
     'MyNamespace\\NSController' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/NSController.php',
@@ -77,6 +81,7 @@ return array(
     'Pecee\\SimpleRouter\\Route\\RouteUrl' => $vendorDir . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteUrl.php',
     'Pecee\\SimpleRouter\\Router' => $vendorDir . '/pecee/simple-router/src/Pecee/SimpleRouter/Router.php',
     'Pecee\\SimpleRouter\\SimpleRouter' => $vendorDir . '/pecee/simple-router/src/Pecee/SimpleRouter/SimpleRouter.php',
+    'RegistrarController' => $baseDir . '/controller/registrar.controller.php',
     'RequestTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/RequestTest.php',
     'ResourceController' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/ResourceController.php',
     'ResponseException' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Exception/ResponseException.php',

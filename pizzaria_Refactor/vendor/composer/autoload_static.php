@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitd65bbfe004e796b6dce62e66b5b4fcb5
 {
     public static $prefixLengthsPsr4 = array (
+        'r' => 
+        array (
+            'root\\' => 5,
+        ),
         'P' => 
         array (
             'Pecee\\' => 6,
@@ -14,6 +18,10 @@ class ComposerStaticInitd65bbfe004e796b6dce62e66b5b4fcb5
     );
 
     public static $prefixDirsPsr4 = array (
+        'root\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/pizzaria_Refactor',
+        ),
         'Pecee\\' => 
         array (
             0 => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee',
@@ -22,6 +30,7 @@ class ComposerStaticInitd65bbfe004e796b6dce62e66b5b4fcb5
 
     public static $classMap = array (
         'BootManagerTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/BootManagerTest.php',
+        'CardapioController' => __DIR__ . '/../..' . '/controller/cardapio.controller.php',
         'ClassLoaderTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/ClassLoaderTest.php',
         'ComposerAutoloaderInitd65bbfe004e796b6dce62e66b5b4fcb5' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
@@ -42,9 +51,12 @@ class ComposerStaticInitd65bbfe004e796b6dce62e66b5b4fcb5
         'ExceptionHandlerSecond' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Handler/ExceptionHandlerSecond.php',
         'ExceptionHandlerThird' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Handler/ExceptionHandlerThird.php',
         'FindUrlBootManager' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Managers/FindUrlBootManager.php',
+        'FuncionariosController' => __DIR__ . '/../..' . '/controller/funcionarios.controller.php',
+        'HomeController' => __DIR__ . '/../..' . '/controller/home.controller.php',
         'InputHandlerTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/InputHandlerTest.php',
         'IpRestrictMiddleware' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Middleware/IpRestrictMiddleware.php',
         'LoadableRouteTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/LoadableRouteTest.php',
+        'LoginController' => __DIR__ . '/../..' . '/controller/login.controller.php',
         'MiddlewareLoadedException' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Exception/MiddlewareLoadedException.php',
         'MiddlewareTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/MiddlewareTest.php',
         'MyNamespace\\NSController' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/NSController.php',
@@ -92,6 +104,7 @@ class ComposerStaticInitd65bbfe004e796b6dce62e66b5b4fcb5
         'Pecee\\SimpleRouter\\Route\\RouteUrl' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteUrl.php',
         'Pecee\\SimpleRouter\\Router' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Router.php',
         'Pecee\\SimpleRouter\\SimpleRouter' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/SimpleRouter.php',
+        'RegistrarController' => __DIR__ . '/../..' . '/controller/registrar.controller.php',
         'RequestTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/RequestTest.php',
         'ResourceController' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/ResourceController.php',
         'ResponseException' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Exception/ResponseException.php',

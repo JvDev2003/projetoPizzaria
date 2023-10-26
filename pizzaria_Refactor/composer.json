@@ -3,6 +3,9 @@
     "description": "Pizzaria",
     "license": "MIT",
     "autoload": {
+        "psr-4": {
+            "root\\": "pizzaria_Refactor"
+        },
         "classmap": ["./"]
     },
     "require": {

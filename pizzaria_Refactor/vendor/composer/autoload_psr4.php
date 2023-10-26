@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'root\\' => array($baseDir . '/pizzaria_Refactor'),
     'Pecee\\' => array($vendorDir . '/pecee/simple-router/src/Pecee'),
 );
