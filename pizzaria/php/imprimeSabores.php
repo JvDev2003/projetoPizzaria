@@ -2,8 +2,12 @@
     require 'config.php';
 
     //pega os elementos necessarios das tabelas pizza e valor
-    $sql = "SELECT * FROM pizza";
-    $result = mysqli_query($conn,$sql);//executa a query
+    $conn = Conexao::get();
+
+    $query = $conn->prepare('SELECT * FROM pizza');
+    $query->execute();
+    $pizzas = $query->fetchAll(PDO::FETCH_OBJ);
+
 
     while($row = mysqli_fetch_assoc($result)){//percorre a array retorna pela query
 ?>
