@@ -17,10 +17,10 @@
             <h2>Pizzaria</h2>
         </div><!--logo-->
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="cardapio.view.php">Cardapio</a></li>
-                <li><a href="index.php?page=funcionarios">Funcionários</a></li>
-                <li><a href="index.php?page=login">Login</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./cardapio">Cardapio</a></li>
+                <li><a href="./funcionario">Funcionários</a></li>
+                <li><a href="./login">Login</a></li>
                 <li><a href="php/logout.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
         </nav>
