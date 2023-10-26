@@ -1,8 +1,20 @@
+<?php
+    require "vendor/autoload.php";
 
-    <?php
-        require "vendor/autoload.php";
-    
-        $page = $_GET['page'] ?? ''; 
+    use Pecee\SimpleRouter\SimpleRouter as Router;
+
+
+    Router::get("/", "HomeController@index");
+    Router::get("/login", "LoginController@printLogin");
+    Router::get("/funcionario", "FuncionariosController@printFuncionarios");
+    Router::get("/registrar","RegistrarController@printRegistrar");
+    Router::get("/cardapio","CardapioController@printCardapio");
+    Router::post("/login", "LoginController@efetuarLogin");
+
+    Router::start();
+
+
+        /*$page = $_GET['page'] ?? ''; 
         
         switch ($page) {
             case '':
@@ -22,4 +34,4 @@
         }
     ?>
 
-    </php ?>
+    </php ?>*/
