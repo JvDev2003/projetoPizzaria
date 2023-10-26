@@ -2,7 +2,7 @@
         <section class="banner">    
             <div class="overlay" id="login">
                 <h2>Login</h2>
-                <form method="post" action="php/efetuaLogin.php">
+                <form method="POST" action="./login">
 
                     <label for="email">
                         <input type="email" name="email" id="email" placeholder="exemplo@email.com" required/>
