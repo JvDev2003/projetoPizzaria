@@ -11,7 +11,9 @@ class LoginController {
         require('models/login.model.php');
     }
 
-
+    public function logout(){
+        require ('models/logout.model.php');
+    }
 }
 
 
