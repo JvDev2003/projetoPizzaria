@@ -1,5 +1,5 @@
 <section class="sabores">
-    <form method="post" action="./php/fazerPedido.php">
+    <form method="post" action="./cardapio">
         <ul>
             <?php require 'models/cardapio.model.php';?>
         </ul>
