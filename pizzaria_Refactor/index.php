@@ -9,7 +9,11 @@
     Router::get("/funcionario", "FuncionariosController@printFuncionarios");
     Router::get("/registrar","RegistrarController@printRegistrar");
     Router::get("/cardapio","CardapioController@printCardapio");
+    Router::get("/sistema","SistemaController@printSistema");
     Router::post("/login", "LoginController@efetuarLogin");
+    Router::post("/funcionario","FuncionariosController@entrarSistema");
+    Router::post("/cardapio", "CardapioController@fazerPedido");
+    Router::delete("/login","LoginController@logout");
 
     Router::start();
 
