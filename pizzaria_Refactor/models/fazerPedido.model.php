@@ -6,4 +6,4 @@
 
     Pedido::makePedido($_SESSION['userID'], $items);
 
-    header("Location: ./"); exit;
+    header("Location: /?status=1"); exit;
