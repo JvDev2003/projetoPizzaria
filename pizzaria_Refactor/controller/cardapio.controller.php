@@ -10,6 +10,6 @@
         }
 
         public function fazerPedido(){
-            require ('models/fazerPedido');
+            require ('models/fazerPedido.model.php');
         }
     }

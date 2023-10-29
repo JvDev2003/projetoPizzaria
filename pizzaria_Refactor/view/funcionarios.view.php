@@ -2,7 +2,7 @@
     <section class="banner">
         <div class="overlay" id="login">
             <h2>Login para Funcionários</h2>
-            <a href="./sistema.view.php">sistema</a>
+            <a href="./sistema">sistema</a>
             <a href="./php/fazerPedidoTeste.php">Teste</a>
             <form method="post" action="./funcionario">
                 <label for="email">

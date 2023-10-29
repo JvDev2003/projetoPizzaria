@@ -14,28 +14,9 @@
     Router::post("/funcionario","FuncionariosController@entrarSistema");
     Router::post("/cardapio", "CardapioController@fazerPedido");
     Router::delete("/login","LoginController@logout");
+    Router::post("/confirmacao", "ConfirmacaoController@printConfirmacao");//metodo para teste apenas
+    Router::get("/sistema/concluir/{id}", "SistemaController@concluirPedido");//metodo para teste apenas
+    Router::get("/sistema/excluir/{id}", "SistemaController@excluirPedido");//metodo para teste apenas
+
 
     Router::start();
-
-
-        /*$page = $_GET['page'] ?? ''; 
-        
-        switch ($page) {
-            case '':
-                require ('controller/index.controller.php');
-            break;
-            
-            case 'login':
-                require ('controller/login.controller.php');
-            break;
-            case 'registrar':
-                require ('controller/registrar.controller.php');
-            break;
-            case 'funcionarios':
-                require ('controller/funcionarios.controller.php');
-            break;    
-            default:      
-        }
-    ?>
-
-    </php ?>*/

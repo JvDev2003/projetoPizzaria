@@ -51,7 +51,7 @@
             foreach($itens as $key => $item){
                 $id = $this->trataString($key);
                 if($count == 0){
-                    $query .=  "('$this->id','$item', '$id') ";
+                    $query .=  "('$this->id','$item', '$id')";
                     $count++;
                 }else{
                     $query .=  ",('$this->id','$item', '$id')";
