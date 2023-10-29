@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 07:20 PM
+-- Generation Time: Oct 29, 2023 at 05:27 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -80,7 +80,6 @@ CREATE TABLE `funcionario` (
 --
 
 CREATE TABLE `itempedido` (
-  `idItemPedido` int(11) NOT NULL,
   `fkPedido` int(11) NOT NULL,
   `quantidade` int(1) NOT NULL,
   `fkPizza` varchar(50) NOT NULL
@@ -90,12 +89,24 @@ CREATE TABLE `itempedido` (
 -- Dumping data for table `itempedido`
 --
 
-INSERT INTO `itempedido` (`idItemPedido`, `fkPedido`, `quantidade`, `fkPizza`) VALUES
-(149, 56, 1, 'Bacon'),
-(150, 56, 1, 'Calabresa'),
-(151, 56, 1, 'Pizza de Azeitona com cogumelos'),
-(152, 56, 1, 'Quatro Queijos'),
-(153, 57, 1, 'Pizza de Azeitona com cogumelos');
+INSERT INTO `itempedido` (`fkPedido`, `quantidade`, `fkPizza`) VALUES
+(56, 1, 'Bacon'),
+(56, 1, 'Calabresa'),
+(56, 1, 'Pizza de Azeitona com cogumelos'),
+(56, 1, 'Quatro Queijos'),
+(57, 1, 'Pizza de Azeitona com cogumelos'),
+(58, 3, 'Bacon'),
+(58, 1, 'Calabresa'),
+(58, 2, 'Pizza de Azeitona com cogumelos'),
+(58, 3, 'Quatro Queijos'),
+(59, 3, 'Bacon'),
+(59, 1, 'Calabresa'),
+(59, 2, 'Pizza de Azeitona com cogumelos'),
+(59, 3, 'Quatro Queijos'),
+(60, 1, 'Bacon'),
+(60, 2, 'Calabresa'),
+(60, 4, 'Pizza de Azeitona com cogumelos'),
+(60, 2, 'Quatro Queijos');
 
 -- --------------------------------------------------------
 
@@ -134,8 +145,11 @@ CREATE TABLE `pedido` (
 --
 
 INSERT INTO `pedido` (`idPedido`, `data`, `fkCliente`, `concluido`) VALUES
-(56, '2023-09-11 14:26:18', 2147483647, 0),
-(57, '2023-09-11 14:46:09', 2147483647, 0);
+(56, '2023-09-11 14:26:18', 2147483647, 1),
+(57, '2023-09-11 14:46:09', 2147483647, 1),
+(58, '2023-10-28 18:50:50', 2147483647, 1),
+(59, '2023-10-28 18:51:19', 2147483647, 0),
+(60, '2023-10-28 21:21:38', 2147483647, 0);
 
 -- --------------------------------------------------------
 
@@ -251,7 +265,7 @@ ALTER TABLE `funcionario`
 -- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `idPedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `idPedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `relatorio`
@@ -285,7 +299,7 @@ ALTER TABLE `funcionario`
 -- Constraints for table `itempedido`
 --
 ALTER TABLE `itempedido`
-  ADD CONSTRAINT `itemPedido_ibfk_1` FOREIGN KEY (`fkPedido`) REFERENCES `pedido` (`idPedido`),
+  ADD CONSTRAINT `itemPedido_ibfk_1` FOREIGN KEY (`fkPedido`) REFERENCES `pedido` (`idPedido`) ON DELETE CASCADE,
   ADD CONSTRAINT `itemPedido_ibfk_2` FOREIGN KEY (`fkPizza`) REFERENCES `pizza` (`nome`);
 
 --
