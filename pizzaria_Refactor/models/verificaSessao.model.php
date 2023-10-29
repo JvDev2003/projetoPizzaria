@@ -9,7 +9,7 @@ function verifica_conectado (){
       //destrói a sessão
       session_destroy();
       //redireciona o visitante de volta pro login
-      header("Location: /"); exit;
+      header("Location: /login"); exit;
   }
 }
 
@@ -20,6 +20,6 @@ function verificaPermissao($permissao){
       // Destrói a sessão por segurança
       session_destroy();
       // Redireciona o visitante de volta pro login
-      header("Location: ../login.view.php"); exit;
+      header("Location: /funcionario"); exit;
   }
 }
