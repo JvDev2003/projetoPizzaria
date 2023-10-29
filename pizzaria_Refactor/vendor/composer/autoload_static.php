@@ -123,6 +123,7 @@ class ComposerStaticInitd65bbfe004e796b6dce62e66b5b4fcb5
         'SistemaController' => __DIR__ . '/../..' . '/controller/sistema.controller.php',
         'TestBootManager' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Managers/TestBootManager.php',
         'TestRouter' => __DIR__ . '/..' . '/pecee/simple-router/tests/TestRouter.php',
+        'User' => __DIR__ . '/../..' . '/classes/usuario.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

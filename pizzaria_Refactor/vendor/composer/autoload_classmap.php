@@ -100,4 +100,5 @@ return array(
     'SistemaController' => $baseDir . '/controller/sistema.controller.php',
     'TestBootManager' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Managers/TestBootManager.php',
     'TestRouter' => $vendorDir . '/pecee/simple-router/tests/TestRouter.php',
+    'User' => $baseDir . '/classes/usuario.class.php',
 );
