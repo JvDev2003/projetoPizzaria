@@ -6,4 +6,8 @@ class RegistrarController{
         require ('view/registrar.view.php');
         require ('layout/footer.layout.php');
     }
+
+    public function realizarCadastro(){
+        require ('models/registrar.model.php');
+    }
 }
