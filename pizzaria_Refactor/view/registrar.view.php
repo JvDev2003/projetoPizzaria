@@ -3,7 +3,7 @@
         <div class="overlay">
             <h2>Registre-se</h2>
 
-            <form method="post" action="php/realizaCadastro.php" id="registrar">
+            <form method="post" action="/registrar" id="registrar">
                 <fieldset class="dados">
                     <label for="nome">
                         Nome:

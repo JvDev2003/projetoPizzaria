@@ -18,7 +18,7 @@
                     </div>
 
                     <a href="">esqueceu sua senha?</a>
-                    <a href="index.php?page=registrar">registre-se aqui!</a>
+                    <a href="/registrar">registre-se aqui!</a>
                 </form>
             </div>
             <img src="./images/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai.jpg">
