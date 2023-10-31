@@ -3,8 +3,8 @@
     class HomeController{
         public function index(){
             require ('layout/header.layout.php');
-            require ('alerts/alerts.php');
             require ('view/index.view.php');
+            require ('alerts/alerts.php');
             require ('layout/footer.layout.php');
         }
     }

@@ -10,6 +10,7 @@ $conn = Conexao::get();
 $query = $conn->prepare("SELECT l.email, l.permissoes, f.idFuncionario FROM `login` l, `funcionario` f WHERE email = '{$_POST['email']}' AND senha = '{$_POST['senha']}' AND l.email = f.fkLogin");
 $query->execute();
 $resultado = $query->fetchAll(PDO::FETCH_ASSOC);
+
 if($query->rowCount() == 1){
     if (!isset($_SESSION)) session_start();//inicia a sessão
 
