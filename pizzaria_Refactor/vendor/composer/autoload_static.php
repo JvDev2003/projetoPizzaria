@@ -119,6 +119,7 @@ class ComposerStaticInitd65bbfe004e796b6dce62e66b5b4fcb5
         'RouterRewriteTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/RouterRewriteTest.php',
         'RouterRouteTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/RouterRouteTest.php',
         'RouterUrlTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/RouterUrlTest.php',
+        'Sessao' => __DIR__ . '/../..' . '/classes/sesssao.class.php',
         'SilentTokenProvider' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Security/SilentTokenProvider.php',
         'SistemaController' => __DIR__ . '/../..' . '/controller/sistema.controller.php',
         'TestBootManager' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Managers/TestBootManager.php',

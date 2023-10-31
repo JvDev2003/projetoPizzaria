@@ -96,6 +96,7 @@ return array(
     'RouterRewriteTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/RouterRewriteTest.php',
     'RouterRouteTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/RouterRouteTest.php',
     'RouterUrlTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/RouterUrlTest.php',
+    'Sessao' => $baseDir . '/classes/sesssao.class.php',
     'SilentTokenProvider' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Security/SilentTokenProvider.php',
     'SistemaController' => $baseDir . '/controller/sistema.controller.php',
     'TestBootManager' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Managers/TestBootManager.php',
