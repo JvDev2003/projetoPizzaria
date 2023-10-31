@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 29, 2023 at 05:27 PM
+-- Generation Time: Oct 31, 2023 at 06:55 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cliente` (
-  `cpf` int(11) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
   `nome` varchar(30) DEFAULT NULL,
   `fkLogin` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -38,7 +38,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`cpf`, `nome`, `fkLogin`) VALUES
-(2147483647, 'joana', 'ana@hotmail.com');
+('2147483647', 'joana', 'ana@hotmail.com');
 
 -- --------------------------------------------------------
 
@@ -50,8 +50,8 @@ CREATE TABLE `endereco` (
   `idEndereco` int(11) NOT NULL,
   `rua` varchar(35) NOT NULL,
   `numero` int(11) NOT NULL,
-  `cep` int(11) NOT NULL,
-  `fkCliente` int(11) NOT NULL
+  `cep` varchar(11) NOT NULL,
+  `fkCliente` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -59,7 +59,7 @@ CREATE TABLE `endereco` (
 --
 
 INSERT INTO `endereco` (`idEndereco`, `rua`, `numero`, `cep`, `fkCliente`) VALUES
-(6, 'rua', 40, 1232323, 2147483647);
+(6, 'rua', 40, '1232323', '2147483647');
 
 -- --------------------------------------------------------
 
@@ -72,6 +72,13 @@ CREATE TABLE `funcionario` (
   `nome` varchar(30) DEFAULT NULL,
   `fkLogin` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `funcionario`
+--
+
+INSERT INTO `funcionario` (`idFuncionario`, `nome`, `fkLogin`) VALUES
+(1, 'Admin', 'admin@email.com');
 
 -- --------------------------------------------------------
 
@@ -106,7 +113,21 @@ INSERT INTO `itempedido` (`fkPedido`, `quantidade`, `fkPizza`) VALUES
 (60, 1, 'Bacon'),
 (60, 2, 'Calabresa'),
 (60, 4, 'Pizza de Azeitona com cogumelos'),
-(60, 2, 'Quatro Queijos');
+(60, 2, 'Quatro Queijos'),
+(61, 2, 'Bacon'),
+(61, 1, 'Calabresa'),
+(61, 2, 'Quatro Queijos'),
+(62, 4, 'Bacon'),
+(62, 1, 'Calabresa'),
+(62, 2, 'Pizza de Azeitona com cogumelos'),
+(62, 1, 'Quatro Queijos'),
+(64, 4, 'Bacon'),
+(64, 1, 'Calabresa'),
+(64, 2, 'Pizza de Azeitona com cogumelos'),
+(64, 1, 'Quatro Queijos'),
+(66, 4, 'Bacon'),
+(66, 2, 'Calabresa'),
+(66, 2, 'Quatro Queijos');
 
 -- --------------------------------------------------------
 
@@ -125,6 +146,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`email`, `senha`, `permissoes`) VALUES
+('admin@email.com', '123123', 3),
 ('ana@hotmail.com', '123123', 0);
 
 -- --------------------------------------------------------
@@ -136,7 +158,7 @@ INSERT INTO `login` (`email`, `senha`, `permissoes`) VALUES
 CREATE TABLE `pedido` (
   `idPedido` int(11) NOT NULL,
   `data` datetime DEFAULT NULL,
-  `fkCliente` int(11) DEFAULT NULL,
+  `fkCliente` varchar(11) DEFAULT NULL,
   `concluido` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -145,11 +167,15 @@ CREATE TABLE `pedido` (
 --
 
 INSERT INTO `pedido` (`idPedido`, `data`, `fkCliente`, `concluido`) VALUES
-(56, '2023-09-11 14:26:18', 2147483647, 1),
-(57, '2023-09-11 14:46:09', 2147483647, 1),
-(58, '2023-10-28 18:50:50', 2147483647, 1),
-(59, '2023-10-28 18:51:19', 2147483647, 0),
-(60, '2023-10-28 21:21:38', 2147483647, 0);
+(56, '2023-09-11 14:26:18', '2147483647', 1),
+(57, '2023-09-11 14:46:09', '2147483647', 1),
+(58, '2023-10-28 18:50:50', '2147483647', 1),
+(59, '2023-10-28 18:51:19', '2147483647', 1),
+(60, '2023-10-28 21:21:38', '2147483647', 1),
+(61, '2023-10-29 19:49:58', '2147483647', 1),
+(62, '2023-10-29 20:15:02', '2147483647', 1),
+(64, '2023-10-31 17:54:24', '2147483647', 1),
+(66, '2023-10-31 18:51:08', '2147483647', 0);
 
 -- --------------------------------------------------------
 
@@ -253,19 +279,19 @@ ALTER TABLE `relatorio`
 -- AUTO_INCREMENT for table `endereco`
 --
 ALTER TABLE `endereco`
-  MODIFY `idEndereco` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idEndereco` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `funcionario`
 --
 ALTER TABLE `funcionario`
-  MODIFY `idFuncionario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idFuncionario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `idPedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `idPedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `relatorio`
