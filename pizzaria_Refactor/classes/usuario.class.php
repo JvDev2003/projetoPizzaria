@@ -7,12 +7,12 @@
         }
 
         public static function registrarDadosClientes($dadosUsuario, $conn) {
-            $query = $conn->prepare("INSERT INTO cliente (cpf, nome, fklogin) VALUES ({$dadosUsuario['cpf']}, '{$dadosUsuario['nome']}', '{$dadosUsuario['email']}')");
+            $query = $conn->prepare("INSERT INTO cliente (cpf, nome, fklogin) VALUES ('{$dadosUsuario['cpf']}', '{$dadosUsuario['nome']}', '{$dadosUsuario['email']}')");
             $query->execute();
         }
 
         public static function registrarDadosEndereco($dadosUsuario, $conn){
-            $query = $conn->prepare("INSERT INTO endereco (rua, cep, numero, fkCliente) VALUES ('{$dadosUsuario['rua']}', '{$dadosUsuario['cep']}', '{$dadosUsuario['numero']}', {$dadosUsuario['cpf']})");
+            $query = $conn->prepare("INSERT INTO endereco (rua, cep, numero, fkCliente) VALUES ('{$dadosUsuario['rua']}', '{$dadosUsuario['cep']}', '{$dadosUsuario['numero']}', '{$dadosUsuario['cpf']}')");
             $query->execute();
         }
     }
