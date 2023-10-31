@@ -8,5 +8,7 @@ if (!empty($_GET)) {
         require ('alerts/confirmado.php');
     }elseif (!empty($_GET['excluido']) && $_GET['excluido'] == 1) {
         require ('alerts/excluido.php');
-    }     
+    }elseif (!empty($_GET['cadastrado']) && $_GET['cadastrado'] == 1) {
+        require ('alerts/cadastrado.php');
+    }       
 }
