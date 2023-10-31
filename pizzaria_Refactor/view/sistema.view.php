@@ -1,5 +1,7 @@
-<main>
+<main id="containerSistem">
+    <div id="alertSistem"></div>
     <section class="pedidos">
+        <h1>Pedidos</h1>
         <table>
             <thead>
                 <tr>

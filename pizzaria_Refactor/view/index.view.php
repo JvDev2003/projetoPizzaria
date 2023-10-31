@@ -1,4 +1,5 @@
-
+<main id="container">
+    <div id="alertNode" style="display: none;"></div>
 <section class="banner">
         <div class="overlay">
             <h1>Melhor Pizzaria da região</h1>
