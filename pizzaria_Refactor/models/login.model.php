@@ -6,7 +6,7 @@ if (empty($_POST) AND (empty($_POST['email']) OR empty($_POST['senha']))) {//ver
 
 $conn = Conexao::get();
 
-$query = $conn->prepare("SELECT l.email, l.permissoes, c.cpf FROM `login` l, `cliente` c WHERE email = '{$_POST['email']}' AND senha = '{$_POST['senha']}' AND l.email = c.fkLogin");
+$query = $conn->prepare("SELECT l.email, l.permissoes, c.cpf, c.nome FROM `login` l, `cliente` c WHERE email = '{$_POST['email']}' AND senha = '{$_POST['senha']}' AND l.email = c.fkLogin");
 $query->execute();
 $resultado = $query->fetchAll(PDO::FETCH_ASSOC);
 
@@ -17,6 +17,8 @@ if ($query->rowCount() == 1){
     $_SESSION['userEmail'] = $resultado[0]['email'];
     $_SESSION['userPermissoes'] = $resultado[0]['permissoes'];
     $_SESSION['userID'] = $resultado[0]['cpf'];
+    $_SESSION['userName'] = $resultado[0]['nome'];
+
 
     header("Location: /cardapio");
     exit;

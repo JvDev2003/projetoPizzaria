@@ -19,9 +19,10 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/cardapio">Cardapio</a></li>
+                <li><a href="/sistema">Sistema</a></li>
                 <li><a href="/funcionario">Funcionários</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                <li><a href="/logout"><?= Sessao::getUsername() ?><i class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
         </nav>
     </header>

@@ -18,6 +18,7 @@ if($query->rowCount() == 1){
     $_SESSION['userEmail'] = $resultado[0]['email'];
     $_SESSION['userPermissoes'] = $resultado[0]['permissoes'];
     $_SESSION['userID'] = $resultado[0]['idFuncionario'];
+    $_SESSION['userName'] = 'Worker';
 
     header("Location: /sistema");
     exit; 

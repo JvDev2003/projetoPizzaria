@@ -9,5 +9,5 @@
 
     $conn->commit();
 
-    header("location: /login");
+    header("location: /login?cadastrado=1");
 

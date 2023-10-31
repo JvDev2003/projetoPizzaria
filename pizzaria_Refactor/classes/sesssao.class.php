@@ -22,4 +22,18 @@ class Sessao {
             header("Location: /funcionario?erro=2"); exit;
         }
     }
+
+    public static function passaDireto($permissao){
+        if(isset($_SESSION['userPermissoes']) && $_SESSION['userPermissoes'] >= $permissao){
+            header('Location: /sistema'); exit;
+        }
+    }
+
+    public static function getUsername(){
+        if (!isset($_SESSION)) session_start();
+        if(isset($_SESSION['userName'])){
+
+            return "<span>{$_SESSION['userName']}".'<i class="fa-regular fa-circle-user user" style="color: #ffffff;"></i>'."</span>";
+        }
+    }
 }
