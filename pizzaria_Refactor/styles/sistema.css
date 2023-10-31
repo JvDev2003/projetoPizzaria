@@ -1,9 +1,26 @@
+main#containerSistem{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#alertSistem{
+    align-self: center;
+    max-width: 400px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.pedidos h1{
+    margin-bottom: 10px;
+}
+
 .pedidos{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     flex-direction: column;
-    padding: 50px;
+    padding: 10px 50px;
 }
 
 table, th, td{

@@ -2,9 +2,11 @@
 
     class SistemaController{
         public function printSistema(){
+            Sessao::verificaConectado('funcionario');
+            Sessao::verificaPermissao(1);
             require ('layout/header.layout.php');
-            require ('alerts/alerts.php');
             require ('view/sistema.view.php');
+            require ('alerts/alerts.php');
             require ('layout/footer.layout.php');
         }
 
