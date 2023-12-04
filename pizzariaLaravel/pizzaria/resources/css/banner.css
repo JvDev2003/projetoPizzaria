@@ -1,0 +1,23 @@
+.banner{
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 72px);
+}
+
+section img{
+    max-width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    color: white;
+}

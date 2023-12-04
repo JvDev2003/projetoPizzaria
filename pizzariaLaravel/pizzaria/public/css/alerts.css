@@ -1,0 +1,19 @@
+#alertLogin{
+    width: 300px;
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+}
+
+#alertNode{
+    position: fixed;
+    z-index: 4;
+    top: 10vh;
+    background-color: green;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}

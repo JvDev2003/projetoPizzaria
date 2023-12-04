@@ -1,0 +1,71 @@
+.confirmacao{
+    overflow: hidden;
+    background-image: url('../images/fundo-de-madeira.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmacao > form{
+    width: 35vw;
+    height: 75vh;
+    background-image: url('../images/papel.jpg');
+    padding: 60px 35px;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: space-between;
+}
+
+.confirmacao > form ul{
+    list-style: none;
+    width: 100%;
+}
+
+.confirmacao > form ul h1{
+    text-align: center;
+}
+
+.confirmacao > form ul > p:first-of-type::after{
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+
+.confirmacao span{
+    float: right;
+}
+
+.confirmacao form li:last-of-type::after{
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.confirmacao form input[type=submit]{
+    align-self: center;
+    width: 250px;
+    height: 70px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.75);
+    border: none;
+    transition: .5s;
+    font-size: 2.2rem;
+}
+
+.confirmacao form input[type=submit]:hover{
+    background-color: rgb(1, 1, 161);
+    cursor: pointer;
+}

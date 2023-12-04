@@ -1,0 +1,49 @@
+main#containerSistem{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#alertSistem{
+    align-self: center;
+    max-width: 400px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.pedidos h1{
+    margin-bottom: 10px;
+}
+
+.pedidos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 3px 15px;
+    text-align: center;
+}
+
+td:last-child{
+    font-size: 3rem;
+}
+
+td a{
+    padding: 3px;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}

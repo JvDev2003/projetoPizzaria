@@ -1,0 +1,61 @@
+.logo i{
+    font-size: 3rem;
+    padding-right: 10px;
+    margin: auto;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(245, 22, 22);
+    padding-left: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:not(:nth-child(5)) a:hover{
+    background-color: rgb(168, 2, 2);
+}
+
+nav ul li:nth-of-type(5){
+    background-color: blue;
+}
+
+nav ul li:nth-child(5):hover{
+    background-color: rgb(1, 1, 161);
+}
+
+nav ul li:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:last-of-type span{
+    display: inline-block;
+}
+
+nav ul li:last-of-type span .user{
+    margin: 0 10px 0 5px;
+}
+
+
+
