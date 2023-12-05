@@ -6,7 +6,8 @@
     <section class="banner">
         <div class="overlay" id="login">
             <h2>Login para Funcionários</h2>
-            <form method="post" action="/funcionario">
+            <form method="post" action="funcionario">
+                @csrf
                 <div id="alertLogin"></div>
                 <label for="email">
 

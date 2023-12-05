@@ -3,7 +3,8 @@
 @section('content')
 
 <section class="sabores">
-    <form method="post" action="./confirmacao">
+    <form method="post" action="confirmacao">
+        @csrf
         <ul>
             @foreach ($pizzas as $item)
                 <li>
